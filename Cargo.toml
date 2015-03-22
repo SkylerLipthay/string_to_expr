@@ -1,0 +1,14 @@
+[package]
+
+name = "string_to_expr"
+version = "0.0.1"
+authors = ["Skyler Lipthay <skyler.lipthay@gmail.com>"]
+description = "Compile-time expression evaluation for strings"
+readme = "README.md"
+keywords = ["eval", "macro"]
+license = "MIT"
+repository = "https://github.com/SkylerLipthay/string_to_expr"
+
+[lib]
+name = "string_to_expr"
+plugin = true
