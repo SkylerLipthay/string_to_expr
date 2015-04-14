@@ -42,7 +42,7 @@ fn string_to_expr<'a>(cx: &'a mut ExtCtxt,
         }
     };
 
-    if !parser.eat(&token::Token::Eof) {
+    if parser.eat(&token::Token::Eof).is_err() {
         cx.span_err(parser.span, "only one string literal allowed");
         return DummyResult::expr(sp);
     }
